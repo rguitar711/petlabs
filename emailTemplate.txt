@@ -1,0 +1,6 @@
+$from = "info@petlabsdiagnostics.com";
+			$headers = "MIME-Version: 1.0" . "\r\n";
+			$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+			$headers .= "From:" . $from . "\r\n";
+			$headers .= "BCc: guit117_jj@yahoo.com" . "\r\n";
+			mail($email,"Forgot Password","<html><head><title>PetLabs Password</title></head><body><p>number of rows is $rows <br/>$client_id <br/>$sqlUpdate<br/>Your temporary password is $random_password .</p><p> Login into Petlabs with this password then change it to a preferred password in your 	Admin page.</p><p><a href='http://dev.petlabsdiagnostics.com/petlabbackup/login.php'>Login</a> </p> </body> </html>   ",$headers);
